@@ -73,6 +73,7 @@ useEffect(() => {
       await trainModel(model);
 
       // Save model to React state
+      
       setMlModel(model);
 
     } catch (error) {
@@ -628,19 +629,24 @@ useEffect(() => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50">
-      {!gender ? (
-        <div className="min-h-screen flex items-center justify-center p-6">
-          <div className="bg-white rounded-3xl shadow-2xl p-12 max-w-2xl w-full">
-            <div className="text-center mb-6">
-              <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">
-                DressMe.AI
-              </h1>
-              <div className="flex items-center justify-center gap-2 text-gray-600">
-                <Brain className="text-purple-600" size={20} />
-                <span className="text-sm font-medium">AI-Powered Style Assistant</span>
-              </div>
-            </div>
+<div className="min-h-screen bg-[#F5F5F5]">
+  {!gender ? (
+    <div className="min-h-screen flex items-center justify-center p-6">
+      <div className="bg-white rounded-3xl shadow-2xl p-12 max-w-2xl w-full">
+        <div className="text-center mb-6">
+
+          {/* Premium Heading */}
+          <h1 className="text-5xl font-bold text-[#111111] mb-2">
+            DressMe.AI
+          </h1>
+
+          <div className="flex items-center justify-center gap-2 text-gray-600">
+            <Brain className="text-[#111111]" size={20} />
+            <span className="text-sm font-medium">AI-Powered Style Assistant</span>
+          </div>
+
+        </div>
+
             <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
               Welcome to Your Personal Stylist
             </h2>

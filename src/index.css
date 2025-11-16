@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-[#F5F5F5] text-[#1A1A1A];
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-md p-8;
+}
+
+.btn-primary {
+  @apply bg-[#111111] text-white px-6 py-3 rounded-lg font-semibold transition;
+}
+
+.btn-primary:hover {
+  @apply bg-[#2B2B2B];
+}
+
+.text-muted {
+  @apply text-[#6B6B6B];
+}
+
+.section-bg {
+  @apply bg-[#F0F0F0] py-6 px-4 rounded-xl;
+}
